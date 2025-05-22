@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7272492876345114968}
   - component: {fileID: 2485157715952714440}
   - component: {fileID: 1937230969959004552}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: "\u0421TF_Missile"
   m_TagString: Untagged
   m_Icon: {fileID: 0}

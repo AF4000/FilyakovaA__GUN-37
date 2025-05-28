@@ -18679,6 +18679,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TankFree_Body
       objectReference: {fileID: 0}
+    - target: {fileID: 5290783184571931346, guid: c765d9134a550d541b16f8ad39b9a5c6,
+        type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

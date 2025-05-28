@@ -9,6 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3538857488285360397}
+  - component: {fileID: 6234449503153335601}
+  - component: {fileID: 3843321634407625904}
   m_Layer: 9
   m_Name: FirePoint
   m_TagString: Untagged
@@ -25,8 +27,8 @@ Transform:
   m_GameObject: {fileID: 107038947753205194}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.74}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6108711479990084005}
@@ -34,6 +36,125 @@ Transform:
   - {fileID: 682761849090117089}
   m_Father: {fileID: 1933818574832668980}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!120 &6234449503153335601
+LineRenderer:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 107038947753205194}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: cb54088e4fe82ce44aafb5f3dc12b530, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Positions:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 100}
+  m_Parameters:
+    serializedVersion: 3
+    widthMultiplier: 0.095830694
+    widthCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    colorGradient:
+      serializedVersion: 2
+      key0: {r: 1, g: 0.07058824, b: 0.07058824, a: 1}
+      key1: {r: 1, g: 0.07075471, b: 0.07075471, a: 1}
+      key2: {r: 1, g: 0.07075471, b: 0.07075471, a: 1}
+      key3: {r: 0, g: 0, b: 0, a: 0}
+      key4: {r: 0, g: 0, b: 0, a: 0}
+      key5: {r: 0, g: 0, b: 0, a: 0}
+      key6: {r: 0, g: 0, b: 0, a: 0}
+      key7: {r: 0, g: 0, b: 0, a: 0}
+      ctime0: 0
+      ctime1: 4626
+      ctime2: 65535
+      ctime3: 0
+      ctime4: 0
+      ctime5: 0
+      ctime6: 0
+      ctime7: 0
+      atime0: 0
+      atime1: 7325
+      atime2: 65535
+      atime3: 0
+      atime4: 0
+      atime5: 0
+      atime6: 0
+      atime7: 0
+      m_Mode: 0
+      m_ColorSpace: 0
+      m_NumColorKeys: 2
+      m_NumAlphaKeys: 3
+    numCornerVertices: 0
+    numCapVertices: 0
+    alignment: 0
+    textureMode: 0
+    textureScale: {x: 1, y: 1}
+    shadowBias: 0.5
+    generateLightingData: 0
+  m_MaskInteraction: 0
+  m_UseWorldSpace: 1
+  m_Loop: 0
+  m_ApplyActiveColorSpace: 1
+--- !u!114 &3843321634407625904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 107038947753205194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb71d6d589fd4f1292660e4fa94176a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _liner: {fileID: 6234449503153335601}
+  _count: 5
+  _step: 0.5
 --- !u!1 &774710238437765331
 GameObject:
   m_ObjectHideFlags: 0
@@ -256,16 +377,17 @@ MonoBehaviour:
   _gunAngleLimit:
     Min: -25
     Max: 25
-  _horRotateSpeed: 5
+  _horRotateSpeed: 8
   _vertRotateSpeed: 0.2
   <FirePoint>k__BackingField: {fileID: 3538857488285360397}
   _controller: {fileID: 185644283648899287}
   <Velocity>k__BackingField: 100
-  _reloadDelay: 1.5
-  _emitSmokeCount: 3
+  _reloadDelay: 1
+  _emitSmokeCount: 5
   _firePower: 120000
-  _muzzleEffect: {fileID: 0}
-  _smokeEffect: {fileID: 0}
+  _muzzleEffect: {fileID: 4931431775517728811}
+  _smokeEffect: {fileID: 198791558892717060, guid: 01757334d0222ed4881ce8922d96bd92,
+    type: 3}
   _hitEffect: {fileID: 198656289721292014, guid: 318d92bfb9c51a24489f25da35f234a0,
     type: 3}
   _fireSound: {fileID: 8300000, guid: 95502f053e4521d4e9eaf3c777aa8799, type: 3}
@@ -435,6 +557,7 @@ GameObject:
   - component: {fileID: 6310433054701287404}
   - component: {fileID: 5290783184571931346}
   - component: {fileID: 185644283648899287}
+  - component: {fileID: 8697479301572269254}
   m_Layer: 9
   m_Name: TankFree_Body Variant
   m_TagString: Untagged
@@ -602,7 +725,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: bd9566abdbf08834281bfb4ea8b92a5d, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -700,6 +823,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rotateSpeed: 1
+--- !u!114 &8697479301572269254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4421554594539916344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5e26ff9a27948a4b491c756ab3fdb5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mult: 0.1
 --- !u!1 &4518681705710864284
 GameObject:
   m_ObjectHideFlags: 0
@@ -812,7 +948,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4970062900068982707}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0.38268343, z: 0, w: 0.92387956}
+  m_LocalRotation: {x: -0, y: -0.38268343, z: -0, w: 0.92387956}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
